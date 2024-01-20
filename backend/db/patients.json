@@ -1,248 +1,262 @@
-[
-  {
-    "patientId": "1",
-    "basicInfo": {
-      "name": "John",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
+{
+  "patients": [
+    {
+      "patientId": "1",
+      "basicInfo": {
+        "firstName": "John",
+        "lastName": "Smith",
+        "age": 30,
+        "email": "john.smith@example.com",
+        "description": "Experiencing symptoms of Generalized Anxiety Disorder, including excessive worrying, restlessness, and difficulty concentrating. Patient may also report physical symptoms such as muscle tension and fatigue.",
+        "mentalDisorder": "Anxiety"
+      },
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I'm feeling really anxious about my job interview tomorrow.",
+            "Okay, let's talk about that. How did you feel before the interview?",
+            "I was really nervous and didn't know what to expect.",
+            "That makes sense. It can be tough to predict how an interview will go. Did you prepare well for the interview?",
+            "Yes, I practiced answering common questions and did some research on the company.",
+            "Great! That will definitely help you feel more confident. How do you feel now?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I had a bad day today and I'm feeling really down.",
+            "Sorry to hear that. Can you tell me more about what happened?",
+            "I got into an argument with my boss and it really upset me.",
+            "I see. It can be tough when we have conflicts with people in our lives. Have you talked to anyone else about how you're feeling?",
+            "No, I haven't wanted to burden anyone.",
+            "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
     },
-    "meetings": [
-      {
-        "meetingId": "1",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I'm feeling really anxious about my job interview tomorrow.",
-          "Okay, let's talk about that. How did you feel before the interview?",
-          "I was really nervous and didn't know what to expect.",
-          "That makes sense. It can be tough to predict how an interview will go. Did you prepare well for the interview?",
-          "Yes, I practiced answering common questions and did some research on the company.",
-          "Great! That will definitely help you feel more confident. How do you feel now?"
-        ]
+    {
+      "patientId": "2",
+      "basicInfo": {
+        "firstName": "Mary",
+        "lastName": "Johnson",
+        "age": 28,
+        "email": "mary.johnson@example.com",
+        "description": "Diagnosed with Major Depressive Disorder. Patient exhibits persistent feelings of sadness, hopelessness, and a loss of interest in activities. May report changes in appetite, sleep patterns, and energy levels.",
+        "mentalDisorder": "Depression"
       },
-      {
-        "meetingId": "2",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I had a bad day today and I'm feeling really down.",
-          "Sorry to hear that. Can you tell me more about what happened?",
-          "I got into an argument with my boss and it really upset me.",
-          "I see. It can be tough when we have conflicts with people in our lives. Have you talked to anyone else about how you're feeling?",
-          "No, I haven't wanted to burden anyone.",
-          "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  },
-  {
-    "patientId": "2",
-    "basicInfo": {
-      "name": "Jane",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really down lately and I don't know why.",
+            "Okay, let's talk about that. How have you been feeling?",
+            "I just feel hopeless and like nothing is going right in my life.",
+            "That sounds really tough. It can be hard to feel that way sometimes. Have you talked to anyone else about how you're feeling?",
+            "No, I haven't wanted to burden anyone.",
+            "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been having some trouble sleeping lately and it's affecting my mood.",
+            "Ah, I see. Sleep issues can definitely impact our mood and overall well-being. Have you tried anything to help with your sleep?",
+            "Yes, I've tried relaxation techniques and drinking herbal tea before bedtime.",
+            "That's good. Relaxation techniques can really help with sleep quality. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
     },
-    "meetings": [
-      {
-        "meetingId": "1",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really down lately and I don't know why.",
-          "Okay, let's talk about that. How have you been feeling?",
-          "I just feel hopeless and like nothing is going right in my life.",
-          "That sounds really tough. It can be hard to feel that way sometimes. Have you talked to anyone else about how you're feeling?",
-          "No, I haven't wanted to burden anyone.",
-          "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
-        ]
+    {
+      "patientId": "3",
+      "basicInfo": {
+        "firstName": "Robert",
+        "lastName": "Williams",
+        "age": 35,
+        "email": "robert.williams@example.com",
+        "description": "Suffering from Social Anxiety Disorder, characterized by intense fear and avoidance of social situations. Patient may experience physical symptoms such as sweating, trembling, and rapid heartbeat in social settings.",
+        "mentalDisorder": "Anxiety"
       },
-      {
-        "meetingId": "2",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been having some trouble sleeping lately and it's affecting my mood.",
-          "Ah, I see. Sleep issues can definitely impact our mood and overall well-being. Have you tried anything to help with your sleep?",
-          "Yes, I've tried relaxation techniques and drinking herbal tea before bedtime.",
-          "That's good. Relaxation techniques can really help with sleep quality. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  },
-  {
-    "patientId": "3",
-    "basicInfo": {
-      "name": "Sarah",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really overwhelmed with work and personal stuff lately.",
+            "Okay, let's talk about that. How are you feeling right now?",
+            "I'm just feeling so tired and stressed out. Like I can't keep up with everything.",
+            "That sounds really tough. It can be hard when we feel like we're juggling too much. Have you talked to anyone else about how you're feeling?",
+            "No, not really. I just don't want to bother anyone.",
+            "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I'm feeling really anxious about my upcoming wedding.",
+            "Okay, let's talk about that. How are you feeling about the wedding?",
+            "I'm just so stressed out about it all. The planning, the money, the pressure to make it perfect.",
+            "That makes sense. Weddings can be a lot of work and there's a lot of pressure to make everything go smoothly. Have you talked to your partner about how you're feeling?",
+            "No, not really. I don't want to ruin the excitement for them.",
+            "It's important to communicate with your partner and make sure you're both on the same page. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
     },
-    "meetings": [
-      {
-        "meetingId": "1",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really overwhelmed with work and personal stuff lately.",
-          "Okay, let's talk about that. How are you feeling right now?",
-          "I'm just feeling so tired and stressed out. Like I can't keep up with everything.",
-          "That sounds really tough. It can be hard when we feel like we're juggling too much. Have you talked to anyone else about how you're feeling?",
-          "No, not really. I just don't want to bother anyone.",
-          "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
-        ]
+    {
+      "patientId": "4",
+      "basicInfo": {
+        "firstName": "Emily",
+        "lastName": "Davis",
+        "age": 32,
+        "email": "emily.davis@example.com",
+        "description": "Diagnosed with Post-Traumatic Stress Disorder (PTSD) following exposure to a traumatic event. Patient may experience intrusive memories, nightmares, and heightened arousal.",
+        "mentalDisorder": "PTSD"
       },
-      {
-        "meetingId": "2",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I'm feeling really anxious about my upcoming wedding.",
-          "Okay, let's talk about that. How are you feeling about the wedding?",
-          "I'm just so stressed out about it all. The planning, the money, the pressure to make it perfect.",
-          "That makes sense. Weddings can be a lot of work and there's a lot of pressure to make everything go smoothly. Have you talked to your partner about how you're feeling?",
-          "No, not really. I don't want to ruin the excitement for them.",
-          "It's important to communicate with your partner and make sure you're both on the same page. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  },
-  {
-    "patientId": "4",
-    "basicInfo": {
-      "name": "Lily",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been having trouble sleeping lately and it's really affecting my mood.",
+            "Okay, let's talk about that. How have you been feeling lately?",
+            "I just can't seem to fall asleep no matter how tired I am. And when I do finally fall asleep, I wake up feeling groggy and irritable.",
+            "That sounds really frustrating. Sleep problems can be really tough to deal with. Have you talked to your doctor about this?",
+            "Yes, they suggested some meds but I'm not sure if I want to try them.",
+            "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really down lately and I don't know why.",
+            "Sorry to hear that. Can you tell me more about how you're feeling?",
+            "It's just this general sadness and hopelessness. Like nothing can make me feel better.",
+            "That sounds really tough. It can be hard when we feel like we don't know why we're feeling a certain way. Have you talked to anyone else about how you're feeling?",
+            "No, not really. I just don't want to burden anyone.",
+            "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
     },
-    "meetings": [
-      {
-        "meetingId": "3",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been having trouble sleeping lately and it's really affecting my mood.",
-          "Okay, let's talk about that. How have you been feeling lately?",
-          "I just can't seem to fall asleep no matter how tired I am. And when I do finally fall asleep, I wake up feeling groggy and irritable.",
-          "That sounds really frustrating. Sleep problems can be really tough to deal with. Have you talked to your doctor about this?",
-          "Yes, they suggested some meds but I'm not sure if I want to try them.",
-          "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
-        ]
+    {
+      "patientId": "5",
+      "basicInfo": {
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "age": 40,
+        "email": "michael.brown@example.com",
+        "description": "Attention-Deficit/Hyperactivity Disorder (ADHD) diagnosed. Patient exhibits symptoms of inattention, hyperactivity, and impulsivity, affecting daily functioning and activities.",
+        "mentalDisorder": "ADHD"
       },
-      {
-        "meetingId": "4",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really down lately and I don't know why.",
-          "Sorry to hear that. Can you tell me more about how you're feeling?",
-          "It's just this general sadness and hopelessness. Like nothing can make me feel better.",
-          "That sounds really tough. It can be hard when we feel like we don't know why we're feeling a certain way. Have you talked to anyone else about how you're feeling?",
-          "No, not really. I just don't want to burden anyone.",
-          "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  },
-  {
-    "patientId": "5",
-    "basicInfo": {
-      "name": "Mark",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really anxious about my upcoming job interview.",
+            "Okay, let's talk about that. How are you feeling about the interview?",
+            "I'm just so nervous and unsure of what to expect.",
+            "That makes sense. Job interviews can be tough no matter how prepared we are. Have you practiced any common interview questions or talked to anyone about your experience?",
+            "Yes, I've been practicing and doing research on the company.",
+            "Great! That will definitely help you feel more confident. How do you feel now?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been having really bad flashbacks to a traumatic event from my past.",
+            "Okay, let's talk about that. Can you tell me more about what happened?",
+            "It was when I was in a car accident and I hit my head. Ever since then, I've had these horrible flashbacks and nightmares.",
+            "That sounds really tough. Trauma can be incredibly difficult to deal with. Have you talked to anyone else about how you're feeling?",
+            "No, not really. I just don't want to burden anyone.",
+            "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "3",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really anxious and depressed lately, and I'm worried it might be related to my PTSD.",
+            "Okay, let's talk about that. How are you feeling right now?",
+            "I just feel so lost and hopeless. Like nothing can make me feel better.",
+            "That sounds really tough. Post-traumatic stress disorder (PTSD) can be incredibly challenging to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
+            "Yes, they suggested some meds but I'm not sure if I want to try them.",
+            "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
     },
-    "meetings": [
-      {
-        "meetingId": "5",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really anxious about my upcoming job interview.",
-          "Okay, let's talk about that. How are you feeling about the interview?",
-          "I'm just so nervous and unsure of what to expect.",
-          "That makes sense. Job interviews can be tough no matter how prepared we are. Have you practiced any common interview questions or talked to anyone about your experience?",
-          "Yes, I've been practicing and doing research on the company.",
-          "Great! That will definitely help you feel more confident. How do you feel now?"
-        ]
+    {
+      "patientId": "6",
+      "basicInfo": {
+        "firstName": "Sarah",
+        "lastName": "Miller",
+        "age": 26,
+        "email": "sarah.miller@example.com",
+        "description": "Bipolar Disorder diagnosed. Patient experiences episodes of both manic and depressive moods, impacting mood stability, energy levels, and daily activities.",
+        "mentalDisorder": "BPD"
       },
-      {
-        "meetingId": "1",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been having really bad flashbacks to a traumatic event from my past.",
-          "Okay, let's talk about that. Can you tell me more about what happened?",
-          "It was when I was in a car accident and I hit my head. Ever since then, I've had these horrible flashbacks and nightmares.",
-          "That sounds really tough. Trauma can be incredibly difficult to deal with. Have you talked to anyone else about how you're feeling?",
-          "No, not really. I just don't want to burden anyone.",
-          "It's important to remember that you don't have to go through this alone. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      },
-      {
-        "meetingId": "2",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really anxious and depressed lately, and I'm worried it might be related to my PTSD.",
-          "Okay, let's talk about that. How are you feeling right now?",
-          "I just feel so lost and hopeless. Like nothing can make me feel better.",
-          "That sounds really tough. Post-traumatic stress disorder (PTSD) can be incredibly challenging to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
-          "Yes, they suggested some meds but I'm not sure if I want to try them.",
-          "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  },
-  {
-    "patientId": "6",
-    "basicInfo": {
-      "name": "Emily",
-      "age": 0,
-      "description": "",
-      "mentalDisorder": ""
-    },
-    "meetings": [
-      {
-        "meetingId": "3",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been having trouble sleeping lately and I think it might be related to my OCD.",
-          "Okay, let's talk about that. Can you tell me more about how you're feeling?",
-          "It's just this constant feeling of unease and anxiety. Like I can't turn off my brain.",
-          "That sounds really tough. Obsessive-compulsive disorder (OCD) can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
-          "Yes, they suggested some meds but I'm not sure if I want to try them.",
-          "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      },
-      {
-        "meetingId": "4",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really down lately and I think it might be related to my depression.",
-          "Okay, let's talk about that. How are you feeling right now?",
-          "I just feel so hopeless and helpless. Like nothing can make me feel better.",
-          "That sounds really tough. Depression can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
-          "Yes, they suggested some meds but I'm not sure if I want to try them.",
-          "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      },
-      {
-        "meetingId": "5",
-        "therapist": "",
-        "date": "",
-        "transcription": [
-          "I've been feeling really anxious about my upcoming job interview and I think it might be related to my social anxiety disorder.",
-          "Okay, let's talk about that. Can you tell me more about how you're feeling?",
-          "It's just this constant feeling of nervousness and self-consciousness. Like I can't relax in front of other people.",
-          "That sounds really tough. Social anxiety disorder can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
-          "Yes, they suggested some meds but I'm not sure if I want to try them.",
-          "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
-        ]
-      }
-    ]
-  }
-]
+      "meetings": [
+        {
+          "meetingId": "1",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been having trouble sleeping lately and I think it might be related to my OCD.",
+            "Okay, let's talk about that. Can you tell me more about how you're feeling?",
+            "It's just this constant feeling of unease and anxiety. Like I can't turn off my brain.",
+            "That sounds really tough. Obsessive-compulsive disorder (OCD) can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
+            "Yes, they suggested some meds but I'm not sure if I want to try them.",
+            "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "2",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really down lately and I think it might be related to my depression.",
+            "Okay, let's talk about that. How are you feeling right now?",
+            "I just feel so hopeless and helpless. Like nothing can make me feel better.",
+            "That sounds really tough. Depression can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
+            "Yes, they suggested some meds but I'm not sure if I want to try them.",
+            "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        },
+        {
+          "meetingId": "3",
+          "therapist": "",
+          "date": "",
+          "transcription": [
+            "I've been feeling really anxious about my upcoming job interview and I think it might be related to my social anxiety disorder.",
+            "Okay, let's talk about that. Can you tell me more about how you're feeling?",
+            "It's just this constant feeling of nervousness and self-consciousness. Like I can't relax in front of other people.",
+            "That sounds really tough. Social anxiety disorder can be incredibly difficult to deal with. Have you talked to your doctor or a mental health professional about how you're feeling?",
+            "Yes, they suggested some meds but I'm not sure if I want to try them.",
+            "It's understandable that you might have concerns about medication. There are other options we can explore as well. Is there anything else you want to talk about or any other way I can help?"
+          ]
+        }
+      ]
+    }
+  ]
+}
