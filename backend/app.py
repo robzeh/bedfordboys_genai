@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import os
 import json
@@ -14,8 +14,10 @@ def index():
     return "Hello World! This is a Flask Server."
 
 # TODO: make generate endpoint take params like prompt, pass those params to generate function
-@app.route('/generate')
+@app.route('/generate', methods=['POST'])
 def generate():
+    request_body_json = request.get_json()
+    print("Request body", request_body_json)
     # model names = {llama2, ha1, ha2, ...}
     full_resp = generate("ha1", "I am feeling very sad") # remove hardcode prompt
     print(full_resp[0])
@@ -30,11 +32,11 @@ def generate(model_name, prompt, system=None, template=None, format="", context=
     try:
         url = f"{BASE_URL}/api/generate"
         payload = {
-            "model": model_name, 
-            "prompt": prompt, 
-            "system": system, 
-            "template": template, 
-            "context": context, 
+            "model": model_name,
+            "prompt": prompt,
+            "system": system,
+            "template": template,
+            "context": context,
             "options": options,
             "format": format,
         }
@@ -63,7 +65,7 @@ def generate(model_name, prompt, system=None, template=None, format="", context=
                     # Check if it's the last chunk (done is true)
                     if chunk.get("done"):
                         final_context = chunk.get("context")
-            
+
             # Return the full response and the final context
             return full_response, final_context
     except requests.exceptions.RequestException as e:
