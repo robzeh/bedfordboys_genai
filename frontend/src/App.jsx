@@ -15,18 +15,18 @@ import {
 const App = () => {
     const [count, setCount] = useState(0);
 
-    const fetchDataFromServer = async () => {
-        try {
-            const response = await axios.get("http://localhost:3000/generate");
-            console.log(response.data);
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    useEffect(() => {
-        fetchDataFromServer();
-    }, []);
+    // const fetchDataFromServer = async () => {
+    //     try {
+    //         const response = await axios.get("http://localhost:3000/generate");
+    //         console.log(response.data);
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
+    //
+    // useEffect(() => {
+    //     fetchDataFromServer();
+    // }, []);
 
     return (
         <>
