@@ -8,6 +8,9 @@ app = Flask(__name__)
 CORS(app)
 
 BASE_URL = os.environ.get('OLLAMA_HOST', 'http://localhost:11435')
+patients_file_path = 'db/patients.json'
+with open(patients_file_path, 'r') as file:
+    patients_data = json.load(file)
 
 @app.route('/')
 def index():
@@ -70,6 +73,13 @@ def generate(model_name, prompt, system=None, template=None, format="", context=
         print(f"An error occurred: {e}")
         return None, None
 
+
+@app.route('/patients', methods=['GET'])
+def get_patients():
+    return jsonify(patients_data)
+
+
+# @app.route('/patients/:id')
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 3000))

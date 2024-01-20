@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import axios from "axios";
 import Summary from "./pages/Summary"
 import PatientList from "./pages/PatientList"
@@ -13,7 +12,6 @@ import {
 } from "react-router-dom";
 
 const App = () => {
-    const [count, setCount] = useState(0);
 
     const fetchDataFromServer = async () => {
         try {
