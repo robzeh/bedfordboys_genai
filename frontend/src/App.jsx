@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Summary from "./pages/Summary"
-import PatientList from "./pages/PatientList"
-import Goals from "./pages/Goals"
-import Home from "./pages/Home"
-import Patient from "./pages/Patient"
+import Summary from "./pages/Summary";
+import PatientList from "./pages/PatientList";
+import Goals from "./pages/Goals";
+import Home from "./pages/Home";
+import Patient from "./pages/Patient";
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Navigate
+    Route,
+    Navigate,
 } from "react-router-dom";
 
 const App = () => {
@@ -17,8 +18,22 @@ const App = () => {
 
     const fetchDataFromServer = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api");
-            console.log(response.data);
+            const requestBody = {
+                key1: "value1",
+                key2: "value2",
+                key3: "value3",
+            };
+
+            axios
+                .post("http://localhost:3000/generate", requestBody)
+                .then((response) => {
+                    // Handle the success response
+                    console.log("Response:", response.data);
+                })
+                .catch((error) => {
+                    // Handle the error
+                    console.error("Error:", error.message);
+                });
         } catch (error) {
             console.error(error);
         }
@@ -40,6 +55,6 @@ const App = () => {
             </Router>
         </>
     );
-}
+};
 
 export default App;
