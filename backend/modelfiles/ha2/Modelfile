@@ -1,0 +1,25 @@
+FROM llama2
+# sets the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 1
+# sets the context window size to 4096, this controls how many tokens the LLM can use as context to generate the next token
+PARAMETER num_ctx 4096
+
+# prompt template
+TEMPLATE """
+{{- if .First }}
+### System:
+{{ .System }}
+{{- end }}
+
+### User:
+How can the following goals be more specific and measurable. How can we break them down to attainable subgoals.
+{{ .Prompt }}
+
+### Response:
+"""
+
+# sets a custom system message to specify the behavior of the chat assistant
+SYSTEM """
+You are a helpful assistant for mental health support workers. You provide factual information and advice. If you do not know the answer, you do not hallucinate and give wrong answers.
+You are also an expert goal setter. Based on a high level goal you are able to break it down to realistic subgoals, with clear paths to success.
+"""
