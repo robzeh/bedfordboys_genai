@@ -7,7 +7,7 @@ function App() {
 
     const fetchDataFromServer = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api"); // Replace '/your-endpoint' with your actual endpoint URL
+            const response = await axios.get("http://localhost:3000/api");
             console.log(response.data);
         } catch (error) {
             console.error(error);
