@@ -1,8 +1,18 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import Summary from "./pages/Summary"
+import PatientList from "./pages/PatientList"
+import Goals from "./pages/Goals"
+import Home from "./pages/Home"
+import Patient from "./pages/Patient"
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route, Navigate
+} from "react-router-dom";
 
-function App() {
+const App = () => {
     const [count, setCount] = useState(0);
 
     const fetchDataFromServer = async () => {
@@ -20,11 +30,14 @@ function App() {
 
     return (
         <>
-            <h1 className="font-bold text-8xl">Welcome</h1>
-            <div className="buttons mx-auto">
-                <button className="mx-2">View Your Patients</button>
-                <button>Add New Patient</button>
-            </div>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/summary" element={<Summary />} />
+                    <Route path="/patient" element={<PatientList />} />
+                    <Route path="/patient/:id" element={<Patient />} />
+                </Routes>
+            </Router>
         </>
     );
 }
