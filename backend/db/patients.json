@@ -7,6 +7,8 @@
         "lastName": "Smith",
         "age": 30,
         "email": "john.smith@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Experiencing symptoms of Generalized Anxiety Disorder, including excessive worrying, restlessness, and difficulty concentrating. Patient may also report physical symptoms such as muscle tension and fatigue.",
         "mentalDisorder": "Anxiety"
       },
@@ -46,6 +48,8 @@
         "lastName": "Johnson",
         "age": 28,
         "email": "mary.johnson@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Diagnosed with Major Depressive Disorder. Patient exhibits persistent feelings of sadness, hopelessness, and a loss of interest in activities. May report changes in appetite, sleep patterns, and energy levels.",
         "mentalDisorder": "Depression"
       },
@@ -83,6 +87,8 @@
         "lastName": "Williams",
         "age": 35,
         "email": "robert.williams@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Suffering from Social Anxiety Disorder, characterized by intense fear and avoidance of social situations. Patient may experience physical symptoms such as sweating, trembling, and rapid heartbeat in social settings.",
         "mentalDisorder": "Anxiety"
       },
@@ -122,6 +128,8 @@
         "lastName": "Davis",
         "age": 32,
         "email": "emily.davis@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Diagnosed with Post-Traumatic Stress Disorder (PTSD) following exposure to a traumatic event. Patient may experience intrusive memories, nightmares, and heightened arousal.",
         "mentalDisorder": "PTSD"
       },
@@ -161,6 +169,8 @@
         "lastName": "Brown",
         "age": 40,
         "email": "michael.brown@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Attention-Deficit/Hyperactivity Disorder (ADHD) diagnosed. Patient exhibits symptoms of inattention, hyperactivity, and impulsivity, affecting daily functioning and activities.",
         "mentalDisorder": "ADHD"
       },
@@ -213,6 +223,8 @@
         "lastName": "Miller",
         "age": 26,
         "email": "sarah.miller@example.com",
+        "avatarUrl":
+          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Bipolar Disorder diagnosed. Patient experiences episodes of both manic and depressive moods, impacting mood stability, energy levels, and daily activities.",
         "mentalDisorder": "BPD"
       },
