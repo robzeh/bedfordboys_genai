@@ -1,0 +1,12 @@
+| Patient ID | Name | Age | Gender |
+| --- | --- | --- | --- |
+| 1 | John | 25 | Male |
+| 2 | Jane | 30 | Female |
+| 3 | Bob | 40 | Male |
+| 4 | Sarah | 28 | Female |
+| 5 | Mike | 35 | Male |
+| 6 | Emily | 21 | Female |
+| 7 | David | 45 | Male |
+| 8 | Lily | 30 | Female |
+| 9 | Jack | 35 | Male |
+| 10 | Lisa | 28 | Female |
