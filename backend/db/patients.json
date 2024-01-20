@@ -1,7 +1,7 @@
 {
   "patients": [
     {
-      "patientId": "1",
+      "patientId": 1,
       "basicInfo": {
         "firstName": "John",
         "lastName": "Smith",
@@ -14,7 +14,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "patientId": "2",
+      "patientId": 2,
       "basicInfo": {
         "firstName": "Mary",
         "lastName": "Johnson",
@@ -55,7 +55,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -68,7 +68,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "patientId": "3",
+      "patientId": 3,
       "basicInfo": {
         "firstName": "Robert",
         "lastName": "Williams",
@@ -94,7 +94,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -107,7 +107,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "patientId": "4",
+      "patientId": 4,
       "basicInfo": {
         "firstName": "Emily",
         "lastName": "Davis",
@@ -135,7 +135,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -148,7 +148,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "patientId": "5",
+      "patientId": 5,
       "basicInfo": {
         "firstName": "Michael",
         "lastName": "Brown",
@@ -176,7 +176,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -189,7 +189,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -202,7 +202,7 @@
           ]
         },
         {
-          "meetingId": "3",
+          "meetingId": 3,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "patientId": "6",
+      "patientId": 6,
       "basicInfo": {
         "firstName": "Sarah",
         "lastName": "Miller",
@@ -230,7 +230,7 @@
       },
       "meetings": [
         {
-          "meetingId": "1",
+          "meetingId": 1,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -243,7 +243,7 @@
           ]
         },
         {
-          "meetingId": "2",
+          "meetingId": 2,
           "therapist": "",
           "date": "",
           "transcription": [
@@ -256,7 +256,7 @@
           ]
         },
         {
-          "meetingId": "3",
+          "meetingId": 3,
           "therapist": "",
           "date": "",
           "transcription": [

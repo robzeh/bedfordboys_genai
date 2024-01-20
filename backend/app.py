@@ -79,6 +79,14 @@ def get_patients():
     return jsonify(patients_data)
 
 
+@app.route('/patients/<int:patient_id>', methods=['GET'])
+def get_patient_by_id(patient_id):
+    patient = next((p for p in patients_data['patients'] if p['patientId'] == patient_id), None)
+    if patient:
+        return jsonify(patient)
+    else:
+        return jsonify({"error": "Patient not found"}), 404
+
 # @app.route('/patients/:id')
 
 if __name__ == "__main__":
