@@ -29,8 +29,8 @@ const Patient = () => {
   }
 
   const { firstName, lastName, email, description, mentalDisorder, age, goal } = patient.basicInfo;
-  const meetings = patient.meetings;
-  const goalPlan = patient.goalPlan;
+  const meetings = patient?.meetings;
+  const goalPlan = patient?.goalPlan;
 
   return (
     <div className="flex">
@@ -87,15 +87,30 @@ const Patient = () => {
               <p className="text-4xl font-semibold leading-7 text-gray-900">Goal Plan 🏋️</p>
             </div>
             <ul role="list" className="divide-y divide-gray-300">
-              {goalPlan.map((goal) => (
-                  <li key={goal.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
-                    <div className="flex min-w-0 gap-x-4 items-center">
-                      <div className="min-w-0">
-                        {goal}
-                      </div>
-                    </div>
-                  </li>
-              ))}
+              {goalPlan ? (
+                  <ul>
+                    {goalPlan.map((goal) => (
+                        <li key={goal.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
+                          <div className="flex min-w-0 gap-x-4 items-center">
+                            <div className="min-w-0">
+                              {goal}
+                            </div>
+                          </div>
+                        </li>
+                    ))}
+                  </ul>
+              ): (
+                  <ul>
+                      <li key={goal.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
+                        <div className="flex min-w-0 gap-x-4 items-center">
+                          <div className="min-w-0">
+                            None yet... ask to generate goals! 💪🏼
+                          </div>
+                        </div>
+                      </li>
+                  </ul>
+              )}
+
             </ul>
           </div>
 
