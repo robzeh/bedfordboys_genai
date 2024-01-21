@@ -34,7 +34,7 @@ const Patient = () => {
   return (
     <div className="flex">
       <div className="w-5/12">
-        <Summary/>
+        <Summary patientId={patientId} />
       </div>
       <div className="w-7/12 px-8">
         <div className="px-32 pt-12 max-w-max">

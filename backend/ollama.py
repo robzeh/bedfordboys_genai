@@ -2,6 +2,8 @@ import os
 import json
 import requests
 
+from utility import *
+
 BASE_URL = os.environ.get('OLLAMA_HOST', 'http://localhost:11435')
 
 # Generate a response for a given prompt with a provided model. This is a streaming endpoint, so will be a series of responses.
@@ -52,13 +54,16 @@ def generate_response(model_name, prompt, system=None, template=None, format="",
         return None, None
 
 
-def handle_ollama(action, prompt, context=None):
-    if action == "goals":
+def handle_ollama(prompt, context=None):
+    goal_words = ["goal", "goals"]
+    summarize_words = ["summary", "summarize"]
+
+    if are_words_in_sentence(goal_words, prompt):
         model = "ha2"
-    elif action == "summarize":
+    elif are_words_in_sentence(summarize_words, prompt):
         model = "ha1"
     else:
-        # default model?
+        # default model
         model = "ha1"
 
     if context == "":

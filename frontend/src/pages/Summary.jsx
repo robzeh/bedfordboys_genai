@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { postGenerate} from "../services/ollama.js";
 
-const Summary = () => {
+const Summary = ({ patientId }) => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,17 +23,20 @@ const Summary = () => {
       setInputText('');
 
       setLoading(true)
-      const response = await axios.post('http://localhost:3000/generate', {
-        userMessage: inputText,
+
+      const response = await postGenerate({
+        prompt: inputText,
+        context: "",
+        patientId: patientId
       });
 
-      const generatedResponse = response.data;
+      const generatedResponse = response.response;
       console.log(generatedResponse);
 
       setLoading(false);
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: generatedResponse.response, sender: 'chatbot' },
+        { text: generatedResponse, sender: 'chatbot' },
       ]);
     } catch (error) {
       console.error('Error sending message to API:', error);

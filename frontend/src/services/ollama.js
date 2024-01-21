@@ -1,26 +1,24 @@
 import axios from 'axios';
+import patient from "../pages/Patient.jsx";
 
 // Set the base URL for API requests
 const BASE_URL = "http://localhost:3000"
 
 
-export const postGenerate = async ({ action, prompt, context}) => {
+export const postGenerate = async ({ prompt, context, patientId}) => {
   try {
-    const data = {
-      action,
-      prompt,
-      context
-    }
     const response = await axios.post(`${BASE_URL}/generate`, {
       headers: {
         "Content-Type": "application/json"
       },
-      data: data
+      prompt,
+      context,
+      patientId
     });
 
     return response.data;
   } catch (error) {
-    return Promise.reject(new Error(`API ${error.config.method} ${endpoint} failed: ${error.response.statusText}`));
+    return Promise.reject(new Error(`API ${error.config.method} failed: ${error.response.statusText}`));
   }
 };
 
@@ -30,7 +28,7 @@ export const getPatients = async () => {
 
     return response.data
   } catch (error) {
-    return Promise.reject(new Error(`API ${error.config.method} ${endpoint} failed: ${error.response.statusText}`));
+    return Promise.reject(new Error(`API ${error.config.method} failed: ${error.response.statusText}`));
   }
 }
 
@@ -40,6 +38,6 @@ export const getAllPatients = async ({ patientId }) => {
 
     return response.data
   } catch (error) {
-    return Promise.reject(new Error(`API ${error.config.method} ${endpoint} failed: ${error.response.statusText}`));
+    return Promise.reject(new Error(`API ${error.config.method} failed: ${error.response.statusText}`));
   }
 }
