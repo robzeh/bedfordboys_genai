@@ -35,10 +35,10 @@ const Patient = () => {
 
   return (
     <div className="flex">
-      <div className="w-1/4">
+      <div className="w-5/12">
         <Summary/>
       </div>
-      <div className="w-3/4 px-8">
+      <div className="w-7/12 px-8">
         <div className="px-32 pt-12 max-w-max">
           <div className="patient-details">
             <div className="px-4 pt-4 sm:px-0 h-auto">
