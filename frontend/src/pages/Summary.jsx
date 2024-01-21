@@ -4,6 +4,7 @@ import axios from "axios";
 const Summary = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     console.log(inputText);
@@ -14,6 +15,14 @@ const Summary = () => {
 
     // Send user's message to the API
     try {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: inputText, sender: 'user' },
+      ]);
+
+      setInputText('');
+
+      setLoading(true)
       const response = await axios.post('http://localhost:3000/generate', {
         userMessage: inputText,
       });
@@ -21,16 +30,14 @@ const Summary = () => {
       const generatedResponse = response.data;
       console.log(generatedResponse);
 
+      setLoading(false);
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: inputText, sender: 'user' },
         { text: generatedResponse.response, sender: 'chatbot' },
       ]);
     } catch (error) {
       console.error('Error sending message to API:', error);
     }
-
-    setInputText('');
   };
 
   return (
@@ -57,6 +64,16 @@ const Summary = () => {
             </div>
           ))}
         </div>
+        {loading && (
+            <div
+                className="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                role="status">
+              <span
+                  className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                Loading...
+              </span>
+            </div>
+        )}
 
         <div className="flex items-center pt-0">
           <div className="flex items-center justify-center w-full space-x-2">
