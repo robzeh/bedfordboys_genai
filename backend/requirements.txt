@@ -3,3 +3,4 @@ Flask_Cors
 requests
 chromadb
 datasets
+openai-whisper
