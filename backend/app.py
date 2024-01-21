@@ -17,7 +17,7 @@ def index():
     return "Hello World! This is a Flask Server."
 
 # TODO: make generate endpoint take params like prompt, pass those params to generate function
-@app.route('/generate')
+@app.route('/generate', methods=['POST'])
 def generate():
     # model names = {llama2, ha1, ha2, ...}
     full_resp = generate("ha1", "I am feeling very sad") # remove hardcode prompt
