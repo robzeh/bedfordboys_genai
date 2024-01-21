@@ -1,4 +1,5 @@
 # HarmonyHelper
+Personalized models aimed to empower mental health support workers. Generate executive summaries, tailored goal planning and personalized care to aid patients overcome their mental health challenges. 
 
 ## GenerativeAI Hackathon - Bedford Boys
 
