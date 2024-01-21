@@ -13,7 +13,7 @@ TEMPLATE """
 
 ### User:
 How can the following goal be more specific and measurable. How can we break them down to attainable subgoals.
-Use the context given to create realistic subgoals, spread out over a 12 week plan.
+Use the context given to create realistic subgoals, spread out over a 12 week plan. Use emojis for each goal.
 {{ .Prompt }}
 
 ### Response:
