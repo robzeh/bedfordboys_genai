@@ -235,24 +235,12 @@
         "goal": "Strive for mood stability and balance amidst the ebbs and flows of life. Embrace a journey that maximizes energy levels and daily activities, navigating through both manic and depressive episodes with resilience and well-being in mind."
       },
       "goalPlan": [
-        {
-          "week0102": "\uD83D\uDC86\u200D♀\uFE0F Identify and track mood swings: Keep a daily mood journal to monitor your mood, including emotions and physical sensations. This will help you identify patterns and triggers.\n\n\uD83E\uDDD8\u200D♂\uFE0F Practice relaxation techniques: Learn deep breathing exercises, progressive muscle relaxation, or mindfulness meditation to manage stress and anxiety. Regular practice will help reduce \nsymptoms of mania and depression."
-        },
-        {
-          "week0304": "\uD83D\uDCAA Build energy management skills: Develop a daily routine that includes moderate exercise, healthy eating, and adequate sleep. This will help stabilize your energy levels and improve overall \nwell-being.\n\n\uD83E\uDD1D Improve communication skills: Practice active listening, assertiveness training, and problem-solving strategies to navigate relationships and daily activities."
-        },
-        {
-          "week0506": "\uD83D\uDCDA Learn about mental health: Educate yourself on bipolar disorder, its treatment options, and self-management techniques. This will help you better understand your condition and make informed \ndecisions about your care.\n\n\uD83D\uDCAD Reflect on values and beliefs: Identify your personal values and beliefs to help guide your decision-making and goal-setting. This will help you prioritize what is important to you and make \nchoices that align with your values."
-        },
-        {
-          "week0708": "\uD83C\uDF08 Cultivate a growth mindset: Embrace challenges as opportunities for growth and learning. Practice reframing negative thoughts and emotions in a more positive light.\n\n\uD83C\uDFCB\uFE0F\u200D♀\uFE0F Develop coping skills: Learn healthy ways to cope with stress, such as problem-solving, humor, or creative expression. This will help you manage difficult emotions and situations more \neffectively."
-        },
-        {
-          "week0910": "\uDD70\uFE0F Set realistic goals: Work with your mental health support worker to set achievable short-term goals for the next three months. These goals should be specific, measurable, achievable, relevant, \nand time-bound (SMART).\n\n\uD83D\uDCAA Implement a self-care plan: Create a personalized plan that includes activities that promote relaxation, stress reduction, and overall well-being. This may include activities like yoga, \nmeditation, or spending time in nature."
-        },
-        {
-          "week1112": "\uD83D\uDCC8 Monitor progress: Regularly track your mood, energy levels, and overall well-being using a journal or other monitoring tool. This will help you identify areas of improvement and make adjustments \nto your self-care plan as needed.\n\nBy following this 12-week plan, you can work towards achieving your goal of striving for mood stability and balance amidst the ebbs and flows of life. Remember to be patient, kind, and \ncompassionate with yourself throughout the process."
-        }
+        "Week 1-2: \uD83D\uDC86\u200D♀\uFE0F Identify and track mood swings: Keep a daily mood journal to monitor your mood, including emotions and physical sensations. This will help you identify patterns and triggers.\n\n\uD83E\uDDD8\u200D♂\uFE0F Practice relaxation techniques: Learn deep breathing exercises, progressive muscle relaxation, or mindfulness meditation to manage stress and anxiety. Regular practice will help reduce \nsymptoms of mania and depression.",
+        "Week 3-4: \uD83D\uDCAA Build energy management skills: Develop a daily routine that includes moderate exercise, healthy eating, and adequate sleep. This will help stabilize your energy levels and improve overall \nwell-being.\n\n\uD83E\uDD1D Improve communication skills: Practice active listening, assertiveness training, and problem-solving strategies to navigate relationships and daily activities.",
+        "Week 5-6: \uD83D\uDCDA Learn about mental health: Educate yourself on bipolar disorder, its treatment options, and self-management techniques. This will help you better understand your condition and make informed \ndecisions about your care.\n\n\uD83D\uDCAD Reflect on values and beliefs: Identify your personal values and beliefs to help guide your decision-making and goal-setting. This will help you prioritize what is important to you and make \nchoices that align with your values.",
+        "Week 7-8: \uD83C\uDF08 Cultivate a growth mindset: Embrace challenges as opportunities for growth and learning. Practice reframing negative thoughts and emotions in a more positive light.\n\n\uD83C\uDFCB\uFE0F\u200D♀\uFE0F Develop coping skills: Learn healthy ways to cope with stress, such as problem-solving, humor, or creative expression. This will help you manage difficult emotions and situations more \neffectively.",
+        "Week 9-10: \uDD70\uFE0F Set realistic goals: Work with your mental health support worker to set achievable short-term goals for the next three months. These goals should be specific, measurable, achievable, relevant, \nand time-bound (SMART).\n\n\uD83D\uDCAA Implement a self-care plan: Create a personalized plan that includes activities that promote relaxation, stress reduction, and overall well-being. This may include activities like yoga, \nmeditation, or spending time in nature.",
+        "Week 11-12\uD83D\uDCC8 Monitor progress: Regularly track your mood, energy levels, and overall well-being using a journal or other monitoring tool. This will help you identify areas of improvement and make adjustments \nto your self-care plan as needed.\n\nBy following this 12-week plan, you can work towards achieving your goal of striving for mood stability and balance amidst the ebbs and flows of life. Remember to be patient, kind, and \ncompassionate with yourself throughout the process."
       ],
       "meetings": [
         {
