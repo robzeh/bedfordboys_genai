@@ -45,13 +45,13 @@ const Summary = ({ patientId }) => {
 
   return (
     <div className="fixed left-0 top-0 h-screen w-2/4 p-6 overflow-y-auto">
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="bg-white p-6 rounded-lg w-[440px] h-[634px] overflow-y-auto">
+    <div className="flex flex-col items-center justify-center w-full h-full">
+      <div className="bg-slate-100 p-6 rounded-lg w-[600px] h-screen overflow-y-auto">
         <div className="flex flex-col space-y-1.5 pb-6">
-          <h2 className="font-semibold text-lg tracking-tight">Virtual Assistant 👋</h2>
+          <h2 className="font-semibold text-lg tracking-tight">HarmonyHelper 👋</h2>
         </div>
 
-        <div className="pr-4 h-[474px]" style={{ minWidth: '100%', display: 'table' }}>
+        <div className="pr-4 h-[800px]" style={{ minWidth: '100%', display: 'table' }}>
           {messages.map((message, index) => (
             <div
               key={index}
