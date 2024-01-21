@@ -29,7 +29,8 @@ const Patient = () => {
   }
 
   const { firstName, lastName, email, description, mentalDisorder, age, goal } = patient.basicInfo;
-  const meetings = patient.meetings
+  const meetings = patient.meetings;
+  const goalPlan = patient.goalPlan;
 
   return (
     <div className="flex">
@@ -86,15 +87,11 @@ const Patient = () => {
               <p className="text-4xl font-semibold leading-7 text-gray-900">Goal Plan 🏋️</p>
             </div>
             <ul role="list" className="divide-y divide-gray-300">
-              {meetings.map((meeting) => (
-                  <li key={meeting.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
+              {goalPlan.map((goal) => (
+                  <li key={goal.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
                     <div className="flex min-w-0 gap-x-4 items-center">
                       <div className="min-w-0">
-                        {meeting.transcription.map((entry, index) => (
-                            <li key={index}>
-                              {index % 2 === 0 ? <span className="font-bold">Client:</span> : <span className="font-bold">You:</span>} {entry}
-                            </li>
-                        ))}
+                        {goal}
                       </div>
                     </div>
                   </li>
