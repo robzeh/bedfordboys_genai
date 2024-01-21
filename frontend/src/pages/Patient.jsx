@@ -78,6 +78,7 @@ const Patient = () => {
             {meetings.map((meeting) => (
               <li key={meeting.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
                 <div className="flex min-w-0 gap-x-4 items-center">
+                  <p className="font-semibold">{meeting.date}</p>
                   <div className="min-w-0">
                    {meeting.transcription.map((entry, index) => (
                       <li key={index}>
