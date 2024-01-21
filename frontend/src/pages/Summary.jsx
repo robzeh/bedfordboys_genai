@@ -30,13 +30,13 @@ const Summary = ({ patientId }) => {
         patientId: patientId
       });
 
-      const generatedResponse = response.data;
+      const generatedResponse = response.response;
       console.log(generatedResponse);
 
       setLoading(false);
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: generatedResponse.response, sender: 'chatbot' },
+        { text: generatedResponse, sender: 'chatbot' },
       ]);
     } catch (error) {
       console.error('Error sending message to API:', error);
