@@ -22,7 +22,7 @@ const Summary = () => {
                 userMessage: inputText,
             });
 
-            const generatedResponse = response.data.generatedResponse;
+            const generatedResponse = response.data;
             console.log(generatedResponse)
 
             setMessages((prevMessages) => [
