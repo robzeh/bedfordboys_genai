@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { postGenerate} from "../services/ollama.js";
 
-const Summary = () => {
+const Summary = ({ patientId }) => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,8 +23,11 @@ const Summary = () => {
       setInputText('');
 
       setLoading(true)
-      const response = await axios.post('http://localhost:3000/generate', {
-        userMessage: inputText,
+
+      const response = await postGenerate({
+        prompt: inputText,
+        context: "",
+        patientId: patientId
       });
 
       const generatedResponse = response.data;
