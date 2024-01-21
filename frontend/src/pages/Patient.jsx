@@ -27,7 +27,7 @@ const Patient = () => {
     return <div></div>
   }
 
-  const { firstName, lastName, email, description, mentalDisorder, age } = patient.basicInfo;
+  const { firstName, lastName, email, description, mentalDisorader, age } = patient.basicInfo;
 
   return (
     <div>
