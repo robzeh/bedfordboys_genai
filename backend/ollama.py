@@ -66,7 +66,12 @@ def handle_ollama(prompt, context=None, patient_id=None):
     info_words = ["info", "information", "faq"]
 
     if are_words_in_sentence(goal_words, prompt):
-        model = "ha2"
+       model = "ha3"
+        if patient_id is not None:
+            patient = next((p for p in patients_data['patients'] if p['patientId'] == int(patient_id)), None)
+            patient_goal = patient['basicInfo']['goal']
+            patient_description = patient['basicInfo']['description']
+            prompt = "Goal: " + patient_goal + "\nDescription: " + patient_description
     # enhance summarization with patient info embeddings
     elif are_words_in_sentence(summarize_words, prompt):
         model = "ha1"
