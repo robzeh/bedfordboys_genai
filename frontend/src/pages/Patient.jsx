@@ -80,9 +80,31 @@ const Patient = () => {
               </dl>
             </div>
           </div>
+
+          <div className="goal-plan">
+            <div className="px-4 pt-8 sm:px-0 h-auto">
+              <p className="text-4xl font-semibold leading-7 text-gray-900">Goal Plan 🏋️</p>
+            </div>
+            <ul role="list" className="divide-y divide-gray-300">
+              {meetings.map((meeting) => (
+                  <li key={meeting.meetingId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
+                    <div className="flex min-w-0 gap-x-4 items-center">
+                      <div className="min-w-0">
+                        {meeting.transcription.map((entry, index) => (
+                            <li key={index}>
+                              {index % 2 === 0 ? <span className="font-bold">Client:</span> : <span className="font-bold">You:</span>} {entry}
+                            </li>
+                        ))}
+                      </div>
+                    </div>
+                  </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="past-conversations">
             <div className="px-4 pt-8 sm:px-0 h-auto">
-              <p className="text-4xl font-semibold leading-7 text-gray-900">Past Conversations</p>
+              <p className="text-4xl font-semibold leading-7 text-gray-900">Past Conversations 📝</p>
             </div>
             <ul role="list" className="divide-y divide-gray-300">
                 {meetings.map((meeting) => (
@@ -101,6 +123,7 @@ const Patient = () => {
                 ))}
               </ul>
           </div>
+
         </div>
       </div>
     </div>

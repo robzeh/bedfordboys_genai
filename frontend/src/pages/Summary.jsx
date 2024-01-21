@@ -48,7 +48,7 @@ const Summary = ({ patientId }) => {
     <div className="flex flex-col items-center justify-center w-full">
       <div className="bg-white p-6 rounded-lg w-[440px] h-[634px] overflow-y-auto">
         <div className="flex flex-col space-y-1.5 pb-6">
-          <h2 className="font-semibold text-lg tracking-tight">Chatbot</h2>
+          <h2 className="font-semibold text-lg tracking-tight">Virtual Assistant 👋</h2>
         </div>
 
         <div className="pr-4 h-[474px]" style={{ minWidth: '100%', display: 'table' }}>
@@ -57,6 +57,7 @@ const Summary = ({ patientId }) => {
               key={index}
               className={`mb-2 ${message.sender === 'user' ? 'text-right' : 'text-left'}`}
             >
+
               <span
                 className={`inline-block px-4 py-2 rounded-md ${
                   message.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-300'
