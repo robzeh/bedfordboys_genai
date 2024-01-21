@@ -41,7 +41,7 @@ const Summary = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-1/4 bg-white p-6 overflow-y-auto">
+    <div className="fixed left-0 top-0 h-screen w-2/4 p-6 overflow-y-auto">
     <div className="flex flex-col items-center justify-center w-full">
       <div className="bg-white p-6 rounded-lg w-[440px] h-[634px] overflow-y-auto">
         <div className="flex flex-col space-y-1.5 pb-6">
@@ -63,17 +63,18 @@ const Summary = () => {
               </span>
             </div>
           ))}
-        </div>
-        {loading && (
-            <div
-                className="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                role="status">
+          {loading && (
+              <div
+                  className="inline-block h-4 w-4 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                  role="status">
               <span
                   className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
                 Loading...
               </span>
-            </div>
-        )}
+              </div>
+          )}
+        </div>
+
 
         <div className="flex items-center pt-0">
           <div className="flex items-center justify-center w-full space-x-2">
