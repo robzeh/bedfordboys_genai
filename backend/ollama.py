@@ -66,7 +66,7 @@ def handle_ollama(prompt, context=None, patient_id=None):
     info_words = ["info", "information", "faq"]
 
     if are_words_in_sentence(goal_words, prompt):
-       model = "ha3"
+        model = "ha3"
         if patient_id is not None:
             patient = next((p for p in patients_data['patients'] if p['patientId'] == int(patient_id)), None)
             patient_goal = patient['basicInfo']['goal']
