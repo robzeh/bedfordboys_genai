@@ -16,7 +16,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I'm feeling really anxious about my job interview tomorrow.",
             "Okay, let's talk about that. How did you feel before the interview?",
@@ -29,7 +29,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I had a bad day today and I'm feeling really down.",
             "Sorry to hear that. Can you tell me more about what happened?",
@@ -57,7 +57,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I've been feeling really down lately and I don't know why.",
             "Okay, let's talk about that. How have you been feeling?",
@@ -70,7 +70,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I've been having some trouble sleeping lately and it's affecting my mood.",
             "Ah, I see. Sleep issues can definitely impact our mood and overall well-being. Have you tried anything to help with your sleep?",
@@ -96,7 +96,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I've been feeling really overwhelmed with work and personal stuff lately.",
             "Okay, let's talk about that. How are you feeling right now?",
@@ -109,7 +109,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I'm feeling really anxious about my upcoming wedding.",
             "Okay, let's talk about that. How are you feeling about the wedding?",
@@ -137,7 +137,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I've been having trouble sleeping lately and it's really affecting my mood.",
             "Okay, let's talk about that. How have you been feeling lately?",
@@ -150,7 +150,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I've been feeling really down lately and I don't know why.",
             "Sorry to hear that. Can you tell me more about how you're feeling?",
@@ -178,7 +178,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I've been feeling really anxious about my upcoming job interview.",
             "Okay, let's talk about that. How are you feeling about the interview?",
@@ -191,7 +191,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I've been having really bad flashbacks to a traumatic event from my past.",
             "Okay, let's talk about that. Can you tell me more about what happened?",
@@ -204,7 +204,7 @@
         {
           "meetingId": 3,
           "therapist": "",
-          "date": "",
+          "date": "2024-01-01",
           "transcription": [
             "I've been feeling really anxious and depressed lately, and I'm worried it might be related to my PTSD.",
             "Okay, let's talk about that. How are you feeling right now?",
@@ -232,7 +232,7 @@
         {
           "meetingId": 1,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-01",
           "transcription": [
             "I've been having trouble sleeping lately and I think it might be related to my OCD.",
             "Okay, let's talk about that. Can you tell me more about how you're feeling?",
@@ -245,7 +245,7 @@
         {
           "meetingId": 2,
           "therapist": "",
-          "date": "",
+          "date": "2023-12-15",
           "transcription": [
             "I've been feeling really down lately and I think it might be related to my depression.",
             "Okay, let's talk about that. How are you feeling right now?",
@@ -258,7 +258,7 @@
         {
           "meetingId": 3,
           "therapist": "",
-          "date": "",
+          "date": "2024-01-01",
           "transcription": [
             "I've been feeling really anxious about my upcoming job interview and I think it might be related to my social anxiety disorder.",
             "Okay, let's talk about that. Can you tell me more about how you're feeling?",
