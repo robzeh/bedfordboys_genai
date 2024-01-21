@@ -7,6 +7,9 @@ from use_embeddings import *
 
 BASE_URL = os.environ.get('OLLAMA_HOST', 'http://localhost:11435')
 
+patients_file_path = 'db/patients.json'
+with open(patients_file_path, 'r') as file:
+    patients_data = json.load(file)
 
 # Generate a response for a given prompt with a provided model. This is a streaming endpoint, so will be a series of responses.
 # The final response object will include statistics and additional data from the request. Use the callback function to override
@@ -59,6 +62,7 @@ def generate_response(model_name, prompt, system=None, template=None, format="",
 def handle_ollama(prompt, context=None, patient_id=None):
     goal_words = ["goal", "goals"]
     summarize_words = ["summary", "summarize"]
+    conversation_words = ["conversation", "convo"]
     info_words = ["info", "information", "faq"]
 
     if are_words_in_sentence(goal_words, prompt):
@@ -68,7 +72,11 @@ def handle_ollama(prompt, context=None, patient_id=None):
         model = "ha1"
         if patient_id is not None:
             patient_embeddings = get_patient_embeddings(patient_id, prompt, num_results=1)
-            prompt = "prompt: " + prompt + ", context: " + patient_embeddings
+            prompt = "write an executive, concise summary. prompt: " + prompt + ", context: " + patient_embeddings
+    elif are_words_in_sentence(conversation_words, prompt):
+        convos = get_conversations(patient_id, patients_data)
+        prompt = "prompt: " + prompt + ", conversations: " + convos
+        model = "convo"
     else:
         # default model
         model = "ha1"
