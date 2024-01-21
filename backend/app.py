@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import os
 import json
@@ -21,11 +21,11 @@ def index():
 @app.route('/generate', methods=['POST'])
 def generate():
     # model names = {llama2, ha1, ha2, ...}
-    full_resp = generate_response("ha1", "I am feeling very sad") # remove hardcode prompt
-    print(full_resp[0])
+    data = request.get_json()
+    request_data = data["data"]
+    full_resp = handle_ollama(request_data["action"], request_data["prompt"], request_data["context"])
 
     return jsonify({"response": full_resp[0]})
-
 
 
 @app.route('/patients', methods=['GET'])

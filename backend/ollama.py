@@ -50,3 +50,18 @@ def generate_response(model_name, prompt, system=None, template=None, format="",
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
         return None, None
+
+
+def handle_ollama(action, prompt, context=None):
+    if action == "goals":
+        model = "ha2"
+    elif action == "summarize":
+        model = "ha1"
+    else:
+        # default model?
+        model = "ha1"
+
+    if context == "":
+        context = None
+
+    return generate_response(model, prompt, context=context)
