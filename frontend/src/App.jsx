@@ -13,19 +13,6 @@ import {
 
 const App = () => {
 
-    const fetchDataFromServer = async () => {
-        try {
-            const response = await axios.get("http://localhost:3000/generate");
-            console.log(response.data);
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    useEffect(() => {
-        fetchDataFromServer();
-    }, []);
-
     return (
         <>
             <Router>
