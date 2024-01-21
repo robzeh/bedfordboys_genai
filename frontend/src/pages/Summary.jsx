@@ -42,7 +42,7 @@ const Summary = () => {
         <>
             <div className="flex justify-center items-center h-screen w-screen">
                 <div
-                    className="fixed bg-white p-6 rounded-lg border border-[#e5e7eb] w-[440px] h-[634px]"
+                    className="fixed bg-white p-6 rounded-lg border border-[#e5e7eb] w-[440px] h-[634px] overflow-y-auto"
                     style={{ boxShadow: '0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05)' }}
                 >
                     <div className="flex flex-col space-y-1.5 pb-6">
@@ -64,20 +64,6 @@ const Summary = () => {
                             </span>
                             </div>
                         ))}
-                        {/*<div className="flex gap-3 my-4 text-gray-600 text-sm flex-1">*/}
-                        {/*    /!* ... (First message) *!/*/}
-                        {/*    message 1*/}
-                        {/*</div>*/}
-
-                        {/*<div className="flex gap-3 my-4 text-gray-600 text-sm flex-1">*/}
-                        {/*    /!* ... (Second message) *!/*/}
-                        {/*    message 2*/}
-                        {/*</div>*/}
-
-                        {/*<div className="flex gap-3 my-4 text-gray-600 text-sm flex-1">*/}
-                        {/*    /!* ... (Third message) *!/*/}
-                        {/*    message 3*/}
-                        {/*</div>*/}
                     </div>
 
                     <div className="flex items-center pt-0">
