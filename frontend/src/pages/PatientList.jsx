@@ -23,7 +23,7 @@ const PatientList = () => {
       <div className="flex items-center justify-center h-screen w-screen">
         <div>
           <h1 className="mb-8 text-black text-center">Your Patients</h1>
-          <ul role="list" className="divide-y divide-gray-100">
+          <ul role="list" className="divide-y divide-gray-300">
             {patients.map((patient) => (
               <li key={patient.patientId} className="flex justify-between items-center gap-x-6 py-5 space-x-60">
                 <div className="flex min-w-0 gap-x-4 items-center">
