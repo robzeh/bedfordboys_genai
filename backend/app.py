@@ -27,16 +27,14 @@ def generate():
     data = request.get_json()
     prompt = data["prompt"]
     context = None
-    # patient_id = data["id"] or None
+    patient_id = data["patientId"]
 
     transcription_words = ["transcribe", "transcript"]
 
-    full_resp = ""
-
-    if (are_words_in_sentence(transcription_words, prompt)):
+    if are_words_in_sentence(transcription_words, prompt):
         full_resp = "Whisper..."
     else:
-        full_resp = handle_ollama(prompt, context)
+        full_resp = handle_ollama(prompt, context, patient_id)
 
     return jsonify({"response": full_resp[0]})
 

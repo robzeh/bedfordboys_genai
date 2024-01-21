@@ -3,8 +3,10 @@ import json
 import requests
 
 from utility import *
+from use_embeddings import *
 
 BASE_URL = os.environ.get('OLLAMA_HOST', 'http://localhost:11435')
+
 
 # Generate a response for a given prompt with a provided model. This is a streaming endpoint, so will be a series of responses.
 # The final response object will include statistics and additional data from the request. Use the callback function to override
@@ -54,19 +56,27 @@ def generate_response(model_name, prompt, system=None, template=None, format="",
         return None, None
 
 
-def handle_ollama(prompt, context=None):
+def handle_ollama(prompt, context=None, patient_id=None):
     goal_words = ["goal", "goals"]
     summarize_words = ["summary", "summarize"]
+    info_words = ["info", "information", "faq"]
 
     if are_words_in_sentence(goal_words, prompt):
         model = "ha2"
+    # enhance summarization with patient info embeddings
     elif are_words_in_sentence(summarize_words, prompt):
         model = "ha1"
+        if patient_id is not None:
+            patient_embeddings = get_patient_embeddings(patient_id, prompt, num_results=1)
+            prompt = "prompt: " + prompt + ", context: " + patient_embeddings
     else:
         # default model
         model = "ha1"
 
-    if context == "":
-        context = None
+    # use mental health faq embeddings
+    if are_words_in_sentence(info_words, prompt):
+        faq_embeddings = get_mental_health_faq_embeddings(prompt, num_results=1)
+        prompt = "prompt: " + prompt + ", context: " + faq_embeddings
 
-    return generate_response(model, prompt, context=context)
+    print(prompt)
+    return generate_response(model, prompt, context=None)
