@@ -3,14 +3,15 @@
     {
       "patientId": 1,
       "basicInfo": {
-        "firstName": "John",
-        "lastName": "Smith",
+        "firstName": "Mary",
+        "lastName": "Johnson",
         "age": 30,
-        "email": "john.smith@example.com",
+        "email": "mary.johnson@example.com",
         "avatarUrl":
           "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Experiencing symptoms of Generalized Anxiety Disorder, including excessive worrying, restlessness, and difficulty concentrating. Patient may also report physical symptoms such as muscle tension and fatigue.",
-        "mentalDisorder": "Anxiety"
+        "mentalDisorder": "Anxiety",
+        "goal":"Strive for inner calm and mental clarity. Work towards a life where worry takes a backseat, restlessness transforms into peaceful energy, and concentration becomes a source of strength. Embrace vitality by addressing physical symptoms, fostering relaxation, and building a resilient mindset."
       },
       "meetings": [
         {
@@ -44,14 +45,15 @@
     {
       "patientId": 2,
       "basicInfo": {
-        "firstName": "Mary",
-        "lastName": "Johnson",
+        "firstName": "John",
+        "lastName": "Smith",
         "age": 28,
-        "email": "mary.johnson@example.com",
+        "email": "john.smith@example.com",
         "avatarUrl":
           "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Diagnosed with Major Depressive Disorder. Patient exhibits persistent feelings of sadness, hopelessness, and a loss of interest in activities. May report changes in appetite, sleep patterns, and energy levels.",
-        "mentalDisorder": "Depression"
+        "mentalDisorder": "Depression",
+        "goal": "Seek a brighter tomorrow by cultivating moments of joy and connection. Aim to lift the weight of persistent sadness and embrace hope. Rediscover the pleasure in activities, nourish restful sleep, and regain control over appetite and energy levels. Strive for a life where positivity becomes the prevailing emotion."
       },
       "meetings": [
         {
@@ -90,7 +92,8 @@
         "avatarUrl":
           "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Suffering from Social Anxiety Disorder, characterized by intense fear and avoidance of social situations. Patient may experience physical symptoms such as sweating, trembling, and rapid heartbeat in social settings.",
-        "mentalDisorder": "Anxiety"
+        "mentalDisorder": "Social Anxiety",
+        "goal": "Embark on a journey to conquer social fears and embrace social situations with newfound confidence. Strive for a life free from the grip of anxiety, where interactions become opportunities for growth rather than sources of fear. Work towards feeling at ease in social settings, conquering physical symptoms, and fostering genuine connections."
       },
       "meetings": [
         {
@@ -131,7 +134,8 @@
         "avatarUrl":
           "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Diagnosed with Post-Traumatic Stress Disorder (PTSD) following exposure to a traumatic event. Patient may experience intrusive memories, nightmares, and heightened arousal.",
-        "mentalDisorder": "PTSD"
+        "mentalDisorder": "PTSD",
+        "goal": "Pave the way to healing and peace by overcoming the shadows of past trauma. Seek a life where memories no longer intrude, nightmares fade away, and a sense of calm replaces heightened arousal. Strive for a future where resilience and strength triumph over the echoes of the past."
       },
       "meetings": [
         {
@@ -165,14 +169,15 @@
     {
       "patientId": 5,
       "basicInfo": {
-        "firstName": "Michael",
-        "lastName": "Brown",
-        "age": 40,
-        "email": "michael.brown@example.com",
+        "firstName": "Sarah",
+        "lastName": "Miller",
+        "age": 26,
+        "email": "sarah.miller@example.com",
         "avatarUrl":
           "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Attention-Deficit/Hyperactivity Disorder (ADHD) diagnosed. Patient exhibits symptoms of inattention, hyperactivity, and impulsivity, affecting daily functioning and activities.",
-        "mentalDisorder": "ADHD"
+        "mentalDisorder": "ADHD",
+        "goal": "Navigate towards a life that embraces focus, calm, and intentional actions. Overcome the challenges of inattention, hyperactivity, and impulsivity, finding a rhythm that enhances daily functioning and empowers a fulfilling journey ahead."
       },
       "meetings": [
         {
@@ -219,14 +224,15 @@
     {
       "patientId": 6,
       "basicInfo": {
-        "firstName": "Sarah",
-        "lastName": "Miller",
-        "age": 26,
-        "email": "sarah.miller@example.com",
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "age": 40,
+        "email": "michael.brown@example.com",
         "avatarUrl":
           "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         "description": "Bipolar Disorder diagnosed. Patient experiences episodes of both manic and depressive moods, impacting mood stability, energy levels, and daily activities.",
-        "mentalDisorder": "BPD"
+        "mentalDisorder": "Bipolar",
+        "goal": "Strive for mood stability and balance amidst the ebbs and flows of life. Embrace a journey that maximizes energy levels and daily activities, navigating through both manic and depressive episodes with resilience and well-being in mind."
       },
       "meetings": [
         {
