@@ -46,10 +46,10 @@ const Patient = () => {
             <img className="h-12 w-12 flex-none rounded-full bg-gray-50 my-4" src={patient.basicInfo.avatarUrl} alt="" />
             <div className="mt-6 border-t border-gray-300">
               <dl className="divide-y divide-gray-300">
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                {/* <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                   <dt className="text-md font-semibold leading-6 text-gray-900">Patient ID</dt>
                   <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{patientId}</dd>
-                </div>
+                </div> */}
                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                   <dt className="text-md font-semibold leading-6 text-gray-900">Full Name</dt>
                   <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{firstName} {lastName}</dd>

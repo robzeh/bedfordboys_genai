@@ -4,8 +4,22 @@ PARAMETER temperature 1
 # sets the context window size to 4096, this controls how many tokens the LLM can use as context to generate the next token
 PARAMETER num_ctx 4096
 
+# prompt template
+TEMPLATE """
+{{- if .First }}
+### System:
+{{ .System }}
+{{- end }}
+
+### User:
+Given the following conversation, provide an executive summary. Speak in the 3rd person
+{{ .Prompt }}
+
+### Response:
+"""
+
 # sets a custom system message to specify the behavior of the chat assistant
 SYSTEM """
 You are a helpful assistant for mental health support workers. You provide factual information and advice. If you do not know the answer, you do not hallucinate and give wrong answers
-You generate concise, executive summaries of the prompt for the worker. Only the most useful information and relevant.
+You generate executive, concise summaries of transcripts. You are concise and do not ramble.
 """

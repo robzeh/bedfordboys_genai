@@ -63,33 +63,28 @@ def handle_ollama(prompt, context=None, patient_id=None):
     goal_words = ["goal", "goals"]
     summarize_words = ["summary", "summarize"]
     conversation_words = ["conversation", "convo"]
-    info_words = ["info", "information", "faq"]
 
     if are_words_in_sentence(goal_words, prompt):
-        model = "ha3"
+        model = "goal_setter"
         if patient_id is not None:
             patient = next((p for p in patients_data['patients'] if p['patientId'] == int(patient_id)), None)
             patient_goal = patient['basicInfo']['goal']
-            patient_description = patient['basicInfo']['description']
-            prompt = "Goal: " + patient_goal + "\nDescription: " + patient_description
+            prompt = "Goal: " + patient_goal 
     # enhance summarization with patient info embeddings
     elif are_words_in_sentence(summarize_words, prompt):
-        model = "ha1"
+        model = "summarize"
         if patient_id is not None:
-            patient_embeddings = get_patient_embeddings(patient_id, prompt, num_results=1)
-            prompt = "write an executive, concise summary. prompt: " + prompt + ", context: " + patient_embeddings
+            patient = next((p for p in patients_data['patients'] if p['patientId'] == int(patient_id)), None)
+            p_info = patient["basicInfo"]
+            prompt = f"Patient info: {p_info['firstName']} {p_info['lastName']}, {p_info['age']}, {p_info['mentalDisorder']}, {p_info['description']}"
     elif are_words_in_sentence(conversation_words, prompt):
-        convos = get_conversations(patient_id, patients_data)
-        prompt = "prompt: " + prompt + ", conversations: " + convos
         model = "convo"
+        if patient_id is not None:
+            convos = get_conversations(patient_id, patients_data)
+            prompt = "Conversations: " + convos
     else:
         # default model
         model = "ha1"
 
-    # use mental health faq embeddings
-    if are_words_in_sentence(info_words, prompt):
-        faq_embeddings = get_mental_health_faq_embeddings(prompt, num_results=1)
-        prompt = "prompt: " + prompt + ", context: " + faq_embeddings
-
-    print(prompt)
-    return generate_response(model, prompt, context=None)
+    resp = generate_response(model, prompt, context=None)
+    return resp

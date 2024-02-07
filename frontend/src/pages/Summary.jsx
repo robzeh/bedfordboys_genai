@@ -8,6 +8,7 @@ const Summary = ({ patientId }) => {
 
   useEffect(() => {
     console.log(inputText);
+    console.log(messages)
   }, [inputText]);
 
   const handleSendMessage = async () => {
@@ -59,7 +60,7 @@ const Summary = ({ patientId }) => {
             >
 
               <span
-                className={`inline-block px-4 py-2 rounded-md ${
+                className={`inline-block px-4 py-2 rounded-md whitespace-pre-line ${
                   message.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-300'
                 }`}
               >
